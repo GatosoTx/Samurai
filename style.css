@@ -1,0 +1,256 @@
+/*
+los colores estan en hexadecimal para mas comodidad personal el codigo y lo que hacen no esta comentados 
+(todos sabemos que hace cada cosa) cada seccion esta comentada con aclaraciones y cosas importantes del desarrollo
+*/
+
+/* el fondo de la pagina */
+* {
+  background-color:#000000
+}
+
+/* ajustes del banner */
+.banner {
+  width: 100%;      
+  overflow: hidden; 
+}
+
+#Banner {
+  width: 100%;               
+  height: 525px;             
+  object-fit: cover;         
+  object-position: center;   
+  display: block;            
+}
+
+/* ajustes del menu */
+header {
+  background-color: #000000;        
+  padding: 20px 40px;               
+  border-bottom: 4px solid #ff0000; 
+}
+
+nav ul {
+  list-style: none; 
+  display: flex;    
+  gap: 30px;        
+  margin: 0;        
+  padding: 0;       
+}
+
+nav ul li a {
+  color: #ffffff; 
+  text-decoration: none;     
+  font-family: Arial, sans-serif; 
+  font-size: 16px;           
+  font-weight: bold;         
+  text-transform: uppercase; 
+  letter-spacing: 1px;       
+  transition: color 0.3s;    
+}
+
+nav ul li a:hover {
+  color: #ff0000; 
+}
+
+/* ajustes de introduccion */
+#introduccion {
+  background-color: #000000; 
+  padding: 5px 40px;        
+}
+
+#introduccion h1 {
+  color: #ffffff;                    
+  font-size: 32px;                 
+  letter-spacing: 5px;             
+  margin-bottom: 5px;             
+  border-left: 5px solid #ff0000; 
+  padding-left: 15px;              
+}
+
+#introduccion p {
+  color: #ffffff;       
+  font-size: 16px;      
+  line-height: 1.8;     
+  text-align: justify;  
+}
+
+/* ajustes de los miembros */
+.miembro { 
+  display: flex;         
+  align-items: center;    
+  gap: 30px;              
+  padding: 5px 5px;  
+  background-color: #000000;  
+}
+
+#integrantes {
+  background-color: #000000; 
+  padding: 5px 40px;        
+}
+
+#integrantes h1 {
+  color: #ffffff;                    
+  font-size: 32px;                 
+  letter-spacing: 5px;             
+  margin-bottom: 10px;             
+  border-left: 5px solid #ff0000; 
+  padding-left: 15px;              
+}
+
+#integrantes p {
+  color: #ffffff;       
+  font-size: 16px;    
+  line-height: 1.8;   
+  margin-bottom: 5px;
+  text-align: justify; 
+}
+
+.info h1 {
+  color: #ffffff;  
+  font-size: 32px;  
+  margin-bottom: 10px; 
+  border-left: 5px solid #ff0000;
+  padding-left: 15px;
+}
+
+.info p {
+  color: #ffffff;  
+  font-size: 16px;   
+  line-height: 1.8;       
+  text-align: justify;       
+}
+
+#johnny {
+  width: 350px;           
+  height: 450px;       
+  object-fit: cover; 
+}
+
+#kerry {
+  width: 350px;           
+  height: auto;       
+  object-fit: cover;  
+}
+
+#nancy {
+  width: 350px;           
+  height: auto;       
+  object-fit: cover;  
+}
+
+#denny {
+  width: 350px;           
+  height: auto;       
+  object-fit: cover;  
+}
+
+#henry {
+  width: 350px;           
+  height: auto;       
+  object-fit: cover;  
+}
+
+/* ajustes de la historia */
+#historia {
+  background-color: #000000; 
+  padding: 5px 40px;        
+}
+
+#historia h1 {
+  color: #ffffff;                   
+  font-size: 32px;                 
+  letter-spacing: 5px;            
+  margin-bottom: 10px;             
+  border-left: 5px solid #ff0000; 
+  padding-left: 15px;              
+}
+
+#historia p {
+  color: #ffffff;      
+  font-size: 16px;      
+  line-height: 1.8;     
+  text-align: justify;  
+}
+
+/* ajustes de la discografia */
+#discografia {
+  background-color: #000000; 
+  padding: 5px 40px;       
+  display: flex;            
+  flex-direction: column;    
+  gap: 10px;                
+}
+
+#discografia h1 {
+  color: #ffffff;                   
+  font-size: 32px;                
+  letter-spacing: 5px;             
+  margin-bottom: 10px;
+  border-left: 5px solid #ff0000; 
+  padding-left: 15px;             
+}
+
+#discografia p {
+  color: #ffffff;       
+  font-size: 16px;    
+  line-height: 1.8;   
+  margin-bottom: 5px;
+  text-align: justify; 
+}
+
+.tarjetas {
+  display: flex;    
+  gap: 5px;        
+  flex-wrap: wrap;  
+}
+
+.tarjeta {
+  background-color: #000000; 
+  border-radius: 10px;      
+  overflow: hidden;         
+  width: 200px;             
+  cursor: pointer;          
+  transition: transform 0.3s, box-shadow 0.3s; 
+  padding-bottom: 15px;      
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);       
+  box-shadow: 0 0 20px #ff0000; 
+}
+
+.tarjeta video {
+  width: 100%;      
+  height: 130px;    
+  object-fit: cover; 
+  display: block;    
+}
+
+.tarjeta h2 {
+  color: #ffffff;        
+  font-size: 13px;      
+  padding: 10px 15px 0; 
+  text-transform: uppercase; 
+  letter-spacing: 1px;   
+}
+
+.explicacion {
+  background-color: #000000; 
+  border-left: 5px solid #cc0000; 
+  border-radius: 8px;       
+  padding: 30px;            
+  max-width: 800px;         
+}
+
+.explicacion h2 {
+  color: #ffffff;        
+  font-size: 24px;      
+  margin-bottom: 15px;  
+  letter-spacing: 2px;  
+}
+
+.explicacion p {
+  color: #ffffff;   
+  font-size: 16px;  
+  line-height: 1.8; 
+}
